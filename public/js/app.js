@@ -9,9 +9,16 @@
 
 // EXO2 la même chose sauf qu'on incrémente par deux
 
-let multiplicateur = 5;
+// let multiplicateur = 5;
 
-for (let index = 0; index <=10; index+=2) {
-    console.log(`${multiplicateur} * ${index} = ${multiplicateur * index}`);
+// for (let index = 0; index <=10; index+=2) {
+//     console.log(`${multiplicateur} * ${index} = ${multiplicateur * index}`);
+    
+// }
+
+// EXO 3 en js faire une boucle déscendante pour les nombres pairs de 20 à 0
+
+for (let index = 20; index >=0; index-=2) {
+    console.log(index);
     
 }
