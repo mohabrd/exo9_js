@@ -41,17 +41,53 @@
 
 // EXO 5 en js créer un tableau qui se nomme 'sommes' avec une multitude de valeurs numérique ensuite créer un tableau qui se nomme 'grossesSommes' et si la valeur excède 60, pousser les dabs ce tableau et les retirer du tableau sommes
 
-let sommes = [14, 7 , 97, 65 , 247 , 67 , 101 , 4 , 34 ,78 , 1 ,900 , 0, 11 , 32 , 23 , 61];
+// let sommes = [14, 7 , 97, 65 , 247 , 67 , 101 , 4 , 34 ,78 , 1 ,900 , 0, 11 , 32 , 23 , 61];
 
-let grossesSommes =[];
+// let grossesSommes =[];
 
-for (let index = 0; index < sommes.length; index++) {
+// for (let index = 0; index < sommes.length; index++) {
     
-    if (sommes[index]>60) {
-        grossesSommes.push(sommes[index]);
-        sommes.splice(index, 1);
-        index--; 
+//     if (sommes[index]>60) {
+//         grossesSommes.push(sommes[index]);
+//         sommes.splice(index, 1);
+//         index--; 
+//     }
+// }
+// console.log(sommes);
+// console.log(grossesSommes);
+
+// EXO 6 en js trier le contenu du tableau "données" en vérifiant le type de chaque donnée puis créer 4 tableaux : 'typeString' , 'typeNumber' , 'typeObject' , 'typeAutre et finir par vider le tableau "données" en redistribuant avec l'aide de condition et d'une function prédéfinie trouvé sur internet dans les bons tableau
+
+let donnees = [14, 7 , 97, {} , "247" , 67 , 101 , true , 34 ,78 , [] ,'coding school' , 0, 11 , 32 , "italie" , 61,null,'cent',100];
+
+let typeString = []
+let typeNumber = []
+let typeObject = []
+let typeAutre = []
+
+for (let i = 0; i < donnees.length; i++) {
+    let element = donnees[i];
+    
+    if (typeof element === 'string') {
+        typeString.push(element);
+        
+    }
+    else if (typeof element === 'number') {
+        typeNumber.push(element);
+        
+    }
+    else if (typeof element === 'object') {
+        typeObject.push(element);
+        
+    }
+    else {
+        typeAutre.push(element);
+
     }
 }
-console.log(sommes);
-console.log(grossesSommes);
+
+console.log(donnees);
+console.log(typeString);
+console.log(typeNumber);
+console.log(typeObject);
+console.log(typeAutre);
