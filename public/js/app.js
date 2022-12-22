@@ -18,7 +18,23 @@
 
 // EXO 3 en js faire une boucle déscendante pour les nombres pairs de 20 à 0
 
-for (let index = 20; index >=0; index-=2) {
-    console.log(index);
+// for (let index = 20; index >=0; index-=2) {
+//     console.log(index);
     
+// }
+
+// EXO 4 en js créer un tableau avec les prénoms des gens de la classe ensuite avec l'aide d'une boucle, mettre les prénomns ayant plus de 5 caractères dans un second tableau qui se nomme 'longPrenoms'
+
+let prenoms = ['Quentin','Bachir','Sebastien','Brandon','Charlotte','Denis','Yassine'];
+
+let longPrenoms = [];
+
+for (let index = 0; index < prenoms.length; index++) {
+    
+    if (prenoms[index].length>5) {
+        longPrenoms.push(prenoms[index]);
+        
+    }
 }
+console.log(prenoms);
+console.log(longPrenoms);
