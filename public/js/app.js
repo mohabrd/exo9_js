@@ -58,36 +58,49 @@
 
 // EXO 6 en js trier le contenu du tableau "données" en vérifiant le type de chaque donnée puis créer 4 tableaux : 'typeString' , 'typeNumber' , 'typeObject' , 'typeAutre et finir par vider le tableau "données" en redistribuant avec l'aide de condition et d'une function prédéfinie trouvé sur internet dans les bons tableau
 
-let donnees = [14, 7 , 97, {} , "247" , 67 , 101 , true , 34 ,78 , [] ,'coding school' , 0, 11 , 32 , "italie" , 61,null,'cent',100];
+// let donnees = [14, 7 , 97, {} , "247" , 67 , 101 , true , 34 ,78 , [] ,'coding school' , 0, 11 , 32 , "italie" , 61,null,'cent',100];
 
-let typeString = []
-let typeNumber = []
-let typeObject = []
-let typeAutre = []
+// let typeString = []
+// let typeNumber = []
+// let typeObject = []
+// let typeAutre = []
 
-for (let i = 0; i < donnees.length; i++) {
-    let element = donnees[i];
+// for (let i = 0; i < donnees.length; i++) {
+//     let element = donnees[i];
     
-    if (typeof element === 'string') {
-        typeString.push(element);
+//     if (typeof element === 'string') {
+//         typeString.push(element);
         
-    }
-    else if (typeof element === 'number') {
-        typeNumber.push(element);
+//     }
+//     else if (typeof element === 'number') {
+//         typeNumber.push(element);
         
-    }
-    else if (typeof element === 'object') {
-        typeObject.push(element);
+//     }
+//     else if (typeof element === 'object') {
+//         typeObject.push(element);
         
-    }
-    else {
-        typeAutre.push(element);
+//     }
+//     else {
+//         typeAutre.push(element);
 
-    }
-}
+//     }
+// }
 
-console.log(donnees);
-console.log(typeString);
-console.log(typeNumber);
-console.log(typeObject);
-console.log(typeAutre);
+// console.log(donnees);
+// console.log(typeString);
+// console.log(typeNumber);
+// console.log(typeObject);
+// console.log(typeAutre);
+
+// EXO 7 en js créer un tableau avec les prénoms de toute la classe, et mettez leur première lettre en majuscule, la dernière aussi et le reste en minuscule
+
+let prenoms = ['quentin','bachir','sebastien','brandon','charlotte','denis','yassine'];
+
+const prenomsmodifier = prenoms.map(name => {
+  const firstLetter = name.charAt(0).toUpperCase();
+  const lastLetter = name.charAt(name.length - 1).toUpperCase();
+  const middleLetters = name.slice(1, -1).toLowerCase();
+  return `${firstLetter}${middleLetters}${lastLetter}`;
+});
+
+console.log(prenomsmodifier);
