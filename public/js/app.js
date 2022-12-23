@@ -94,13 +94,33 @@
 
 // EXO 7 en js créer un tableau avec les prénoms de toute la classe, et mettez leur première lettre en majuscule, la dernière aussi et le reste en minuscule
 
-let prenoms = ['quentin', 'bachir', 'sebastien', 'brandon', 'charlotte', 'denis', 'yassine'];
+// let prenoms = ['quentin', 'bachir', 'sebastien', 'brandon', 'charlotte', 'denis', 'yassine'];
 
-  let prenomsmodifier = prenoms.map(nom => {
-  let premierelettre = nom.charAt(0).toUpperCase();
-  let dernierelettre = nom.charAt(nom.length - 1).toUpperCase();
-  let lettredumilieu = nom.slice(1, -1).toLowerCase();
-  return `${premierelettre}${lettredumilieu}${dernierelettre}`;
-});
+//   let prenomsmodifier = prenoms.map(nom => {
+//   let premierelettre = nom.charAt(0).toUpperCase();
+//   let dernierelettre = nom.charAt(nom.length - 1).toUpperCase();
+//   let lettredumilieu = nom.slice(1, -1).toLowerCase();
+//   return `${premierelettre}${lettredumilieu}${dernierelettre}`;
+// });
 
-console.log(prenomsmodifier);
+// console.log(prenomsmodifier);
+
+// EXO 8 en js créer une variable avec cette valeur = "Bonjour à tous" ensuite faire en sorte d'avoir ce résultat à la fin : BoNjOuR A ToUs
+
+let bonjour = "Bonjour à tous";
+
+// METTRE EN MAJ :
+
+// let bonjourenmajuscule = bonjour.toUpperCase();
+// console.log(bonjourenmajuscule);
+
+let messagentiermaj = "";
+for (let i = 0; i < bonjour.length; i++) {
+  if (i % 2 === 0) {
+    messagentiermaj += bonjour[i].toUpperCase();
+  } else {
+    messagentiermaj += bonjour[i].toLowerCase();
+  }
+}
+
+console.log(messagentiermaj);
