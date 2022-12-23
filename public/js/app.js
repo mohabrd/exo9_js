@@ -129,3 +129,13 @@
 
 // EXO 10 WHAT? Quel résultat?
 
+// exo 11 en js créer un tableau avec 10 prénoms puis créer un tableau avec 10 chiffres entre 0 et 20 ensuite combiner ces deux tableau  petit indice : console.log(`${lepremiereprenom} a eu ${lepremierchiffre}/20 en Math`
+
+let prenom = ['quentin', 'bachir', 'sebastien', 'brandon', 'charlotte', 'denis', 'yassine','adil','enide','victor'];
+
+let chiffre = [0,3,5,6,8,11,12,15,18,20]
+
+for (let i = 0; i < prenom.length; i++) {
+  console.log(`${prenom[i]} a eu ${chiffre[i]}/20 en Math`)
+  
+}
