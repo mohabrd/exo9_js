@@ -4,7 +4,7 @@
 
 // for (let index = 0; index <=10; index++) {
 //     console.log(`${multiplicateur} * ${index} = ${multiplicateur * index}`);
-    
+
 // }
 
 // EXO2 la même chose sauf qu'on incrémente par deux
@@ -13,14 +13,14 @@
 
 // for (let index = 0; index <=10; index+=2) {
 //     console.log(`${multiplicateur} * ${index} = ${multiplicateur * index}`);
-    
+
 // }
 
 // EXO 3 en js faire une boucle déscendante pour les nombres pairs de 20 à 0
 
 // for (let index = 20; index >=0; index-=2) {
 //     console.log(index);
-    
+
 // }
 
 // EXO 4 en js créer un tableau avec les prénoms des gens de la classe ensuite avec l'aide d'une boucle, mettre les prénomns ayant plus de 5 caractères dans un second tableau qui se nomme 'longPrenoms'
@@ -30,10 +30,10 @@
 // let longPrenoms = [];
 
 // for (let index = 0; index < prenoms.length; index++) {
-    
+
 //     if (prenoms[index].length>5) {
 //         longPrenoms.push(prenoms[index]);
-        
+
 //     }
 // }
 // console.log(prenoms);
@@ -46,7 +46,7 @@
 // let grossesSommes =[];
 
 // for (let index = 0; index < sommes.length; index++) {
-    
+
 //     if (sommes[index]>60) {
 //         grossesSommes.push(sommes[index]);
 //         sommes.splice(index, 1);
@@ -67,18 +67,18 @@
 
 // for (let i = 0; i < donnees.length; i++) {
 //     let element = donnees[i];
-    
+
 //     if (typeof element === 'string') {
 //         typeString.push(element);
-        
+
 //     }
 //     else if (typeof element === 'number') {
 //         typeNumber.push(element);
-        
+
 //     }
 //     else if (typeof element === 'object') {
 //         typeObject.push(element);
-        
+
 //     }
 //     else {
 //         typeAutre.push(element);
@@ -94,13 +94,13 @@
 
 // EXO 7 en js créer un tableau avec les prénoms de toute la classe, et mettez leur première lettre en majuscule, la dernière aussi et le reste en minuscule
 
-let prenoms = ['quentin','bachir','sebastien','brandon','charlotte','denis','yassine'];
+let prenoms = ['quentin', 'bachir', 'sebastien', 'brandon', 'charlotte', 'denis', 'yassine'];
 
-const prenomsmodifier = prenoms.map(name => {
-  const firstLetter = name.charAt(0).toUpperCase();
-  const lastLetter = name.charAt(name.length - 1).toUpperCase();
-  const middleLetters = name.slice(1, -1).toLowerCase();
-  return `${firstLetter}${middleLetters}${lastLetter}`;
+  let prenomsmodifier = prenoms.map(nom => {
+  let premierelettre = nom.charAt(0).toUpperCase();
+  let dernierelettre = nom.charAt(nom.length - 1).toUpperCase();
+  let lettredumilieu = nom.slice(1, -1).toLowerCase();
+  return `${premierelettre}${lettredumilieu}${dernierelettre}`;
 });
 
 console.log(prenomsmodifier);
