@@ -107,20 +107,23 @@
 
 // EXO 8 en js créer une variable avec cette valeur = "Bonjour à tous" ensuite faire en sorte d'avoir ce résultat à la fin : BoNjOuR A ToUs
 
-let bonjour = "Bonjour à tous";
+// let bonjour = "Bonjour à tous";
 
 // METTRE EN MAJ :
 
 // let bonjourenmajuscule = bonjour.toUpperCase();
 // console.log(bonjourenmajuscule);
 
-let messagentiermaj = "";
-for (let i = 0; i < bonjour.length; i++) {
-  if (i % 2 === 0) {
-    messagentiermaj += bonjour[i].toUpperCase();
-  } else {
-    messagentiermaj += bonjour[i].toLowerCase();
-  }
-}
+// let messagentiermaj = "";
+// for (let i = 0; i < bonjour.length; i++) {
+//   if (i % 2 === 0) {
+//     messagentiermaj += bonjour[i].toUpperCase();
+//   } else {
+//     messagentiermaj += bonjour[i].toLowerCase();
+//   }
+// }
 
-console.log(messagentiermaj);
+// console.log(messagentiermaj);
+
+// EXO 9 aie
+
